@@ -14,27 +14,27 @@ var server = http.createServer(function (request, response) {
     if (randomNum < 0.4) {
       response.end(
         '<h1></h1>' +
-        '<a href="http://localhost:8080">Home Page</a>' +
-        '<h1>Can a kangaroo jump higher than a house? Of course, a house doesn\n’t jump at all.</h1>'
+        '<a href="/">Home Page</a>' +
+        '<h1>Can a kangaroo jump higher than a house? Of course, a house doesn\'t jump at all.</h1>'
       )
     } else if (randomNum > 0.7) {
       response.end(
         '<h1></h1>' +
-        '<a href="http://localhost:8080">Home Page</a>' +
-        '<h1>Anton, do you think I\n’m a bad mother?</h1>' +
+        '<a href="/">Home Page</a>' +
+        '<h1>Anton, do you think I\'m a bad mother?</h1>' +
         '<h1>My name is Paul.</h1>'
       )
     } else {
       response.end(
         '<h1></h1>' +
-        '<a href="http://localhost:8080">Home Page</a>' +
-        '<h1>Do not go to the bathroom in a dream. It\n’s a trap!</h1>'
+        '<a href="/">Home Page</a>' +
+        '<h1>Do not go to the bathroom in a dream. It\'s a trap!</h1>'
       )
     }
   } else if (request.url === '/cuteness') {
     response.end(
       '<h1></h1>' +
-      '<a href="http://localhost:8080">Home Page</a>' +
+      '<a href="/">Home Page</a>' +
       '<img src="https://i.imgur.com/jKhQJVH.jpg" alt="Waving hi">'
     )
   } else {
@@ -42,7 +42,7 @@ var server = http.createServer(function (request, response) {
       '<h1>404.That\'s an error</h1>' +
       '<p>The requested URL' + request.url + '</p>' +
       '<p>was not found on this server.That\'s all we know</p>' +
-      '<a href="http://localhost:8080">Home Page</a>'
+      '<a href="/">Home Page</a>'
     )
   }
 })
